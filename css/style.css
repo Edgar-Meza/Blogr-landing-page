@@ -33,9 +33,13 @@ header nav ul li a {
     text-decoration: none;
     color: #FFFFFF;
 }
+header nav ul li a:hover {
+    text-decoration: underline;
+}
 header nav ul li:hover ul {
     display: block;
 }
+
 header nav ul li ul {
     display: none;
     padding: 0;
@@ -94,6 +98,10 @@ header nav ul li ul li a:hover {
     background-color: transparent;
     color: #FFFFFF!important;
     border: 1px solid #FFFFFF;
+}
+.menu-mobile {
+    width: 20%;
+    display: none;
 }
 /* main */
 /* header */
@@ -172,6 +180,7 @@ header nav ul li ul li a:hover {
     color: hsl(207, 13%, 34%);
     font-family: 'Overpass', sans-serif;
     margin-bottom: 10%;
+    overflow: hidden;
 }
 .introduction h2 {
     text-align: center;
@@ -301,4 +310,102 @@ footer div span {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 992px) {
+    .nav-items ul li {
+        width: 25%;
+    }
+    .state-text {
+        text-align: center;
+    }
+    .state-text h2 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .state-text p {
+        padding: 10%;
+        margin-top: 0;
+    }
+    .s3-img img {
+        margin-left: -70%;
+    }
+    .s3-text {
+        padding-right: 5%;
+    }
+    footer {
+        height: 40vh;
+    }
+}
+@media (max-width: 768px) {
+    .header-info h1 {
+        font-size: 40px;
+    }
+    .introduction-text h3 {
+        font-size: 20px;
+    }
+    .introduction-text p {
+        font-size: 12px;
+    }
+    .bg-state {
+        height: 45vh;
+        background-position-x: 138%;
+    }
+    .state-img {
+        margin-top: -50px;
+    }
+    .state-img img {
+        width: 100%;
+    }
+    .state-text p {
+        font-size: 12px;
+    }
+    .s3-img img {
+        width: 180%;
+    }
+    .s3-text h2:first-child {
+        margin-top: 15%;
+    }
+    .s3-text p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 576px) {
+    header {
+        flex-wrap: wrap;
+    }
+    .nav-logo {
+        width: 80%;
+        text-align: left;
+    }
+    .nav-logo img {
+        margin-left: 10%;
+    }
+    .menu-mobile {
+        display: block;
+        text-align: center
+    }
+    .menu-mobile img {
+        margin-top: 5px;
+    }
+    .nav-items {
+        width: 100%;
+        background: #FFFFFF;
+        color: #000;
+        border-radius: 15px;
+        margin: 15px;
+    }
+    header nav ul {
+        display: block;
+        margin: 0;
+    }
+    header nav ul li {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    
+    }
+    header nav ul li a {
+        color: #000;
+    }
 }
