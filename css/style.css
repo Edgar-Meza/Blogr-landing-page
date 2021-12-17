@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Josefin+Sans:wght@300;400;600&family=Lexend+Deca&family=Red+Hat+Display:wght@400;500&family=Rubik:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Josefin+Sans:wght@300;400;600&family=Lexend+Deca&family=Overpass:wght@200;300;600&family=Red+Hat+Display:wght@400;500&family=Rubik:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap');
 body {
     margin: 0;
     padding: 0;
     /* margin-top: -20px; */
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Overpass', sans-serif;
     overflow-x: hidden;
 }
 /* header */
@@ -18,18 +19,43 @@ header {
 }
 header nav ul {
     margin: 0;
+    padding-top: 15px;
     display: flex;
+    margin-left: 10%;
 }
 header nav ul li {
     list-style: none;
     margin-right: 20px;
+    width: 15%;
+    font-weight: bold;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header nav ul li:hover ul {
+    display: block;
 }
 header nav ul li ul {
-    display: block;
+    display: none;
     padding: 0;
+    background: #FFF;
+    border-radius: 15px;
+    padding: 17px;
+    color: #000;
+    width: fit-content;
+    margin-left: 0;
 }
 header nav ul li ul li {
     list-style: none;
+    font-weight: normal;
+}
+header nav ul li ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+header nav ul li ul li a:hover {
+    font-weight: bold;
 }
 .nav-logo {
     width: 15%;
@@ -43,18 +69,31 @@ header nav ul li ul li {
     text-align: center;
     padding-top: 15px;
 }
+.nav-access a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.nav-access a:first-child {
+    font-weight: bold;
+}
 .btn-signup {
     background: #FFFFFF;
     display: inline;
     padding: 15px;
     border-radius: 25px;
     text-decoration: none;
-    color: hsl(353, 100%, 62%);
+    color: hsl(353, 100%, 62%)!important;
     font-weight: bold;
     cursor: pointer;
     padding-left: 30px;
     padding-right: 30px;
     margin-left: 10px;
+}
+.btn-signup:hover {
+    background-color: transparent;
+    color: #FFFFFF!important;
+    border: 1px solid #FFFFFF;
 }
 /* main */
 /* header */
@@ -102,6 +141,10 @@ header nav ul li ul li {
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
 }
+#start:hover ~ #learn {
+    background-color: #FFFFFF;
+    color: hsl(353, 100%, 62%);;
+}
 #learn {
     background: transparent;
     display: inline;
@@ -127,10 +170,12 @@ header nav ul li ul li {
     padding-top: 5%;
     margin-top: 10px;
     color: hsl(207, 13%, 34%);
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 10%;
 }
 .introduction h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 .introduction-info {
     display: flex;
@@ -144,7 +189,7 @@ header nav ul li ul li {
 }
 .introduction-text p {
     font-size: 15px;
-    line-height: 25px;
+    line-height: 30px;
 }
 .introduction-img {
     width: 50%;
@@ -154,6 +199,7 @@ header nav ul li ul li {
 .state {
     background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
     border-radius: 0px 120px;
+    font-family: 'Overpass', sans-serif;
 }
 .state-img {
     width: 50%;
@@ -174,17 +220,20 @@ header nav ul li ul li {
 }
 .state-text h2 {
     margin-top: 15%;
-    font-size: 30px;
+    font-size: 35px;
 }
 .state-text p {
     padding-right: 20%;
-    line-height: 25px;
+    line-height: 30px;
+    color: hsl(240, 2%, 79%);
 }
 /* section 3 */
 .section-3 {
     margin-top: 60px;
     display: flex;
     color: hsl(207, 13%, 34%);
+    margin-bottom: 10vh;
+    font-family: 'Overpass', sans-serif;
 }
 .s3-img {
     width: 50%;
@@ -198,19 +247,25 @@ header nav ul li ul li {
     padding-right: 10%;
     padding-top: 4%;
 }
+.s3-text h2 {
+    font-weight: 600;
+}
 .s3-text h2:first-child {
     margin-top: 30%;
 }
 .s3-text p {
-    line-height: 25px;
+    line-height: 30px;
+    font-size: 15px;
 }
 /* footer */
 footer {
-    height: 40vh;
+    height: 30vh;
     display: flex;
     background-color: hsl(240, 10%, 16%);
     border-radius: 0px 100px 0px 0px;
     padding: 5%;
+    padding-left: 12%;
+    padding-right: 12%;
     flex-wrap: wrap;
     color: hsl(240, 2%, 79%);
 }
@@ -220,6 +275,11 @@ footer div ul {
 footer div ul li {
     list-style: none;
     margin-bottom: 15px;
+    font-size: 15px;
+}
+footer div span {
+    color: #FFFFFF;
+    font-weight: bold;
 }
 .footer-logo {
     width: 25%;
@@ -237,7 +297,7 @@ footer div ul li {
     font-size: 11px;
     text-align: center;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
