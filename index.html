@@ -5,19 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | [Blogr]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
-    <img src="images/logo.svg" alt="logo">
-    <nav>
+    <div class="nav-logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    <nav class="nav-items">
       <ul>
         <li>Product
           <ul>
@@ -45,64 +41,98 @@
         </li>
       </ul>
     </nav>
-    <div>
+    <div class="nav-access">
       <a>Login</a>
-      <a>Sign Up</a>
+      <a class="btn-signup" clas>Sign Up</a>
     </div>
   </header>
   <main>
-    A modern publishing platform
-  Grow your audience and build your online brand
+    <section class="header-main">
+      <img src="images/bg-pattern-intro-desktop.svg" alt="fondo circulo y cuadros">
+      <div class="header-info">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <a id="start" href="#">Start for Free</a>
+        <a id="learn" href="#">Learn More</a>
+      </div>
+    </section>
+    <section class="introduction">
+      <h2>Designed for the future</h2>
+      <div class="introduction-info">
+        <div class="introduction-text">
+          <h3>Introducing an extensible editor</h3>
+          <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.</p>
+          <h3>Robust content management</h3>
+          <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+        </div>
+        <div class="introduction-img">
+          <img src="images/illustration-editor-desktop.svg" alt="editor image">
+        </div>
+      </div>
+    </section>
+    <section class="state">
+      <div class="bg-state">
+        <div class="state-img">
+          <img src="images/illustration-phones.svg" alt="phones">
+        </div>
+        <div class="state-text">
+          <h2>State of the Art Infrastructure</h2>
+          <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-3">
+      <div class="s3-img">
+        <img src="images/illustration-laptop-desktop.svg" alt="laptop image">
+      </div>
+      <div class="s3-text">
+        <h2>Free, open, simple</h2>
+        <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
 
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
+        <h2>Powerful tooling</h2>
+        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+          capable of producing even the most complicated sites.</p>
+      </div>
+    </section>
   </main>
  <footer>
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
+  <div class="footer-logo">
+    <img src="images/logo.svg" alt="logo">
+  </div>
+  <div class="f-product">
+    <span>Product</span>
+    <ul>
+      <li>Overview</li>
+      <li>Pricing</li>
+      <li>Marketplace</li>
+      <li>Features</li>
+      <li>Integrations</li>
+    </ul>
+  </div>
+  <div class="f-company">
+    <span>Company</span>
+    <ul>
+      <li>About</li>
+      <li>Team</li>
+      <li>Blog</li>
+      <li>Careers</li>
+    </ul>
+  </div>
+  <div class="f-connect">
+    <span>Connect</span>
+    <ul>
+      <li>Contact</li>
+      <li>Newsletter</li>
+      <li>LinkedIn</li>
+    </ul>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
