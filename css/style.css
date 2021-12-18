@@ -39,7 +39,12 @@ header nav ul li a:hover {
 header nav ul li:hover ul {
     display: block;
 }
-
+.nav-access hr {
+    display: none;
+}
+.dark-arrow {
+    display: none;
+}
 header nav ul li ul {
     display: none;
     padding: 0;
@@ -67,6 +72,9 @@ header nav ul li ul li a:hover {
 }
 .nav-items {
     width: 60%;
+}
+.nav-items ul li span {
+    background-image: url(../images/icon-arrow-light.svg);
 }
 .nav-access {
     width: 25%;
@@ -204,6 +212,9 @@ header nav ul li ul li a:hover {
     width: 50%;
     margin-top: -120px;
 }
+.introduction-img img:nth-child(2) {
+    display: none;
+}
 /* state */
 .state {
     background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
@@ -214,6 +225,9 @@ header nav ul li ul li a:hover {
     width: 50%;
     margin-top: -60px;
     text-align: center;
+}
+.state-img img {
+    width: 100%;
 }
 .bg-state {
     height: 60vh;
@@ -247,8 +261,12 @@ header nav ul li ul li a:hover {
 .s3-img {
     width: 50%;
 }
-.s3-img img {
+.s3-img img:first-child {
     margin-left: -41%;
+    width: 150%;
+}
+.s3-img img:nth-child(2) {
+    display: none;
 }
 .s3-text {
     width: 50%;
@@ -385,27 +403,165 @@ footer div span {
         display: block;
         text-align: center
     }
-    .menu-mobile img {
+    .menu-mobile img:first-child {
+        margin-top: 5px;
+    }
+    .menu-mobile img:nth-child(2) {
+        display: none;
         margin-top: 5px;
     }
     .nav-items {
         width: 100%;
         background: #FFFFFF;
         color: #000;
-        border-radius: 15px;
+        border-radius: 10px 10px 0px 0px;
         margin: 15px;
+        display: none;
     }
     header nav ul {
         display: block;
         margin: 0;
+        padding-left: 0;
     }
     header nav ul li {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
-    
+        width: 100%!important;
+        text-align: center;
     }
     header nav ul li a {
         color: #000;
+        font-size: 20px;
+    }
+    header nav ul li ul {
+        width: 100%;
+        padding: 0;
+        background: hsl(207, 13%, 75%);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header nav ul li ul li{
+        margin-bottom: 10px;
+    }
+    .nav-access {
+        width: 100%;
+        background: #FFFFFF;
+        border-radius: 0px 0px 10px 10px;
+        margin: 15px;
+        height: auto;
+        margin-top: -5%;
+        padding-top: 40px;
+        display: none;
+    }
+    .nav-access hr {
+        display: block;
+        margin-bottom: 5%;
+        filter: opacity(0.5);
+        width: 90%;
+    }
+    .nav-access a:nth-child(2) {
+        color: #000;
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .nav-access a:nth-child(3) {
+        background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        color: #FFFFFF!important;
+        display: block;
+        margin-bottom: 10px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dark-arrow {
+        display: inline;
+    }
+    .light-arrow {
+        display: none;
+    }
+    .header-main {
+        border-radius: 0px 0px 0px 35%;
+        padding-bottom: 15%;
+    }
+    .introduction {
+        margin-bottom: 25%;
+    }
+    .introduction-info {
+        flex-wrap: wrap;
+    }
+    .introduction-text {
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+    .introduction-img {
+        width: 100%;
+        order: 1;
+        margin-top: 10px;
+    }
+    .introduction-img img:nth-child(1) {
+        display: none;
+    }
+    .introduction-img img:nth-child(2) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .state {
+        height: 60vh;
+    }
+    .bg-state {
+        flex-wrap: wrap;
+    }
+    .state-img {
+        width: 100%;
+        margin-top: -30%;
+    }
+    .state-img img {
+        width: 50%;
+    }
+    .state-text {
+        width: 100%;
+    }
+    .state-text h2 {
+        margin-top: 0;
+    }
+    .state-text p {
+        padding: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .section-3 {
+        flex-wrap: wrap;
+    }
+    .s3-img {
+        width: 100%;
+    }
+    .s3-img img:first-child {
+        display: none;
+    }
+    .s3-img img:nth-child(2) {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+    .s3-text {
+        width: 100%;
+        text-align: center;
+    }
+    footer {
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    footer div {
+        margin-left: auto;
+        margin-right: auto;
     }
 }

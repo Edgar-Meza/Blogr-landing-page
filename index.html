@@ -14,12 +14,13 @@
     <div class="nav-logo">
       <img src="images/logo.svg" alt="logo">
     </div>
-    <div class="menu-mobile">
-      <img src="images/icon-hamburger.svg" alt="menu">
+    <div class="menu-mobile" id="menu">
+      <img id="open" src="images/icon-hamburger.svg" alt="menu" onclick="openMenu()">
+      <img id="close" src="images/icon-close.svg" alt="menu" onclick="closeMenu()">
     </div>
-    <nav class="nav-items">
+    <nav id="options" class="nav-items">
       <ul>
-        <li><a href="#">Product <img src="images/icon-arrow-light.svg" alt=""></a>
+        <li><a href="#">Product <img class="light-arrow" src="images/icon-arrow-light.svg" alt=""><img class="dark-arrow" src="images/icon-arrow-dark.svg" alt=""></a>
           <ul>
             <li><a href="#">Overview</a></li>
             <li><a href="#">Pricing</a></li>
@@ -28,7 +29,7 @@
             <li><a href="#">Integrations</a></li>
           </ul>
         </li>
-        <li><a href="#">Company <img src="images/icon-arrow-light.svg" alt=""></a>
+        <li><a href="#">Company <img class="light-arrow" src="images/icon-arrow-light.svg" alt=""><img class="dark-arrow" src="images/icon-arrow-dark.svg" alt=""></a>
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Team</a></li>
@@ -36,7 +37,7 @@
             <li><a href="#">Careers</a></li>
           </ul>
         </li>
-        <li><a href="#">Connect <img src="images/icon-arrow-light.svg" alt=""></a>
+        <li><a href="#">Connect <img class="light-arrow" src="images/icon-arrow-light.svg" alt=""><img class="dark-arrow" src="images/icon-arrow-dark.svg" alt=""></a>
           <ul>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Newsletter</a></li>
@@ -45,7 +46,8 @@
         </li>
       </ul>
     </nav>
-    <div class="nav-access">
+    <div id="log" class="nav-access">
+      <hr>
       <a href="#">Login</a>
       <a href="#" class="btn-signup">Sign Up</a>
     </div>
@@ -75,6 +77,7 @@
         </div>
         <div class="introduction-img">
           <img src="images/illustration-editor-desktop.svg" alt="editor image">
+          <img src="images/illustration-editor-mobile.svg" alt="editor image">
         </div>
       </div>
     </section>
@@ -93,6 +96,7 @@
     <section class="section-3">
       <div class="s3-img">
         <img src="images/illustration-laptop-desktop.svg" alt="laptop image">
+        <img src="images/illustration-laptop-mobile.svg" alt="laptop image">
       </div>
       <div class="s3-text">
         <h2>Free, open, simple</h2>

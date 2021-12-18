@@ -7,3 +7,15 @@ function padreSelect() {
 function removeStyle() {
     document.getElementById('start').removeAttribute('style');
 }
+function openMenu() {
+    document.getElementById('options').style.display = 'block';
+    document.getElementById('log').style.display = 'block';
+    document.getElementById('open').style.display = 'none';
+    document.getElementById('close').style.display = 'block';
+}
+function closeMenu() {
+    document.getElementById('options').style.display = 'none';
+    document.getElementById('log').style.display = 'none';
+    document.getElementById('open').style.display = 'block';
+    document.getElementById('close').style.display = 'none';
+}
